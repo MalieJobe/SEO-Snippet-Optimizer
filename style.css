@@ -1,0 +1,144 @@
+.claneo-snippet-optimizer{
+    max-width: 720px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.claneo-area-title{
+    display: inline-block;
+    font-size: 20px;
+    margin: 5px 5px 5px 0;
+}
+section.input{
+    width:720px;
+    margin-bottom: 2em;
+}
+.input textarea{
+    width: 698px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    font-size: 16px;
+    resize: none;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    overflow: hidden;
+}
+#claneo-title-input, #claneo-url-input{
+    height: 40px;
+    white-space: nowrap;
+}
+#claneo-description-input{
+    height: 80px;
+    resize: vertical;
+}
+
+
+section.output{
+    width: 720px;
+    max-width: 720px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px 0px #70707036;
+    padding: 30px 0;
+}
+.search-result:not(:first-child){
+    margin-top: 30px;
+}
+.search-result{
+    width: 632px;
+    padding: 0 30px;
+    max-width: 632px;
+}
+#claneo-search-result{
+    margin-bottom: 45px;
+}
+.result-title, .result-url, .result-description{
+    display:block;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 592px;
+    width: 592px;
+    border: none;
+    resize: none;
+    outline: none !important;
+}
+.result-title{
+    color: #1A0DAB;
+    font-size: 18px;
+    line-height: 1.33;
+    padding-top:2px;
+    margin-bottom:3px;
+}
+#claneo-output-title{
+    width: 499px;
+    max-width: 499px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 23.3px;
+}
+#claneo-output-url{
+    height: 18px;
+    margin-bottom:-5px;
+}
+#claneo-output-description{
+    height: 38px;
+    overflow: hidden;
+}
+.result-url{
+    color: #3C4043;
+    font-size: 14px;
+    line-height: 1.43;
+    white-space: nowrap;
+    overflow: hidden;
+    display:inline !important;
+}
+.result-description{
+    color: #3C4043;
+    font-size: 14px;
+    line-height: 1.54;
+}
+.claneo-counter{
+    background-color: #006621;
+    color: white;
+    border-radius: 5px;
+    margin-left: 20px;
+    padding: 2px 4px;
+    display: inline-block;
+}
+.claneo-char-count{
+    display: inline-block;
+    color: grey;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+/* MOBILE CSS */    
+@media only screen and (max-width: 734px) {
+    .claneo-snippet-optimizer{
+        max-width: auto;
+        width:100%;}
+    
+    .input textarea{
+        width: calc(100% - 20px);
+    }
+    .search-result{
+        width: auto;
+        padding: 5px;
+    }
+    section.input, section.output{
+        width: 100%;
+    }
+    #claneo-output-title {
+        width: 100%;
+        white-space: normal;
+        height: auto;
+    }
+    #claneo-output-description {
+        height: auto;
+    }
+    .output{
+        overflow: hidden;
+        padding: 5px;
+    }
+    .result-title, .result-url, .result-description{
+        width: 100%;
+    }
+}
