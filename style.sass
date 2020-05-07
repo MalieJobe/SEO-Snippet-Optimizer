@@ -1,0 +1,150 @@
+.snippet-optimizer
+    max-width: 720px
+    margin: 50px auto
+    font-family: Arial, Helvetica, sans-serif
+
+
+
+.input
+    width: 720px
+    margin-bottom: 2em
+
+    &__title
+        display: inline-block
+        font-size: 20px
+        margin: 5px 5px 5px 0
+
+    &__field
+        width: 698px
+        font-family: Arial, Helvetica, sans-serif
+        padding: 10px
+        font-size: 16px
+        resize: none
+        border-radius: 5px
+        margin-bottom: 1em
+        overflow: hidden
+        height: 40px
+        white-space: nowrap
+
+        &--large
+            height: 80px
+            resize: vertical
+
+    &__counter
+        background-color: #006621
+        color: white
+        border-radius: 5px
+        margin-left: 20px
+        padding: 2px 4px
+        display: inline-block
+
+    &__chars
+        display: inline-block
+        color: grey
+        font-size: 14px
+        margin-left: 5px
+
+
+.output__url, .output__title, .output__description
+    display: block
+    font-family: Arial, Helvetica, sans-serif
+    max-width: 592px
+    width: 592px
+    border: none
+    resize: none
+    outline: none
+
+
+.output
+    width: 720px
+    max-width: 720px
+    border-radius: 5px
+    box-shadow: 0 5px 10px 0px #70707036
+    overflow: auto
+    padding: 30px 0
+
+    &__result
+        width: 632px
+        padding: 0 30px
+        max-width: 632px
+        margin: 20px auto
+
+        &--focus
+            margin-top: 10px
+            margin-bottom: 45px
+
+
+    &__title
+        color: #1A0DAB
+        font-size: 18px
+        line-height: 1.33
+        padding-top: 2px
+        margin-bottom: 3px
+
+        &--focus
+            width: 499px
+            max-width: 499px
+            text-overflow: ellipsis
+            white-space: nowrap
+            overflow: hidden
+            height: 23.3px
+
+    &__url
+        color: #3C4043
+        font-size: 14px
+        line-height: 1.43
+        white-space: nowrap
+        overflow: hidden
+        display:inline !important
+
+        &--focus
+            height: 18px
+            margin-bottom: -5px
+
+    &__description
+        color: #3C4043
+        font-size: 14px
+        line-height: 1.54
+
+        &--focus
+            height: 38px
+            overflow: hidden
+
+
+
+/* MOBILE CSS */    
+@media only screen and (max-width: 747px) 
+    .snippet-optimizer
+        max-width: auto
+        width: 100%
+
+    .input
+        width: calc(100% - 20px)
+        &__field
+            width: 100%
+        
+    .output
+        padding: 30px 5px
+        width: calc(100% - 10px)
+        overflow: hidden
+
+        &__result
+            padding: 0 5px
+            width: calc(100% - 10px)
+
+        &__description
+            width: calc(100% - 10px)
+
+            &--focus 
+                height: auto
+
+        &__title
+            width: calc(100% - 10px)
+            &--focus    
+                width: 100%
+                white-space: normal
+                height: auto
+    
+    .result-title, .result-url, .result-description
+        width: 100%
+    
