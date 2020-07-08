@@ -12,11 +12,11 @@ function copyTitle() {
     var titleInput = document.getElementById("title-input").value;  
     document.getElementById("output-title").textContent = titleInput;
     //console.log("Title: " + getTextWidth(document.getElementById("output-title").textContent, "18px arial"));
-    var titleOutput = getTextWidth(document.getElementById("output-title").textContent, "18px arial");
+    var titleOutput = getTextWidth(document.getElementById("output-title").textContent, "20px arial");
     document.getElementById("title-counter").textContent = titleOutput + "px";
     document.getElementById("title-char-count").textContent = titleInput.length + " Zeichen";
     
-    if (titleOutput > 499) {
+    if (titleOutput > 560) {
         document.getElementById("title-counter").style.backgroundColor = "#FF0000";
     }
     else {
